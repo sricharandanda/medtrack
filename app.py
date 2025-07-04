@@ -38,7 +38,7 @@ user_table = dynamodb.Table(USERS_TABLE_NAME)
 appointment_table = dynamodb.Table(APPOINTMENTS_TABLE_NAME)
 
 # SNS Config
-SNS_TOPIC_ARN = os.environ.get('SNS_TOPIC_ARN')
+SNS_TOPIC_ARN = os.environ.get('arn:aws:sns:us-east-1:863518417312:MedTrack:558117e9-13b2-4a5e-9232-712e88efa37b')
 ENABLE_SNS = os.environ.get('ENABLE_SNS', 'False').lower() == 'true'
 
 # Email Config
